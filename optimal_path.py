@@ -6,30 +6,35 @@ from PyQt5 import QtGui
 from PIL import Image
 import risar
 
-from connections import places_coords
+from connections import cities_coords, countries_coords
 from connections import cities, countries
 
-img = Image.open('map.png')
-width, height = img.size
-
-risar.widget.setFixedHeight(height)
-risar.widget.setFixedWidth(width)
-risar.slika(0, 0, 'map.png')
-
-risar.widget.setWindowTitle('Path finder algorithm visualizer')
-risar.widget.setWindowIcon(QtGui.QIcon('map-icon.png'))
-
-before = time()
-
+#################### MODE: cities or countries
+# s = cities OR s = countries
+s = countries
+# map = 'map_cities.png' OR map = 'map_countries.png'
+map = 'map_countries.png'
+# coords = cities_coords OR countries_coords
+coords = countries_coords
+from_point = "France"
+to_point = "Greece"
 ####################
-s = cities
-####################
-from_point = "Novo mesto"
-to_point = "Bled"
 max_hop = 15
 base = 3
 power = 0.895
 ####################
+
+img = Image.open(map)
+width, height = img.size
+
+risar.widget.setFixedHeight(height)
+risar.widget.setFixedWidth(width)
+risar.slika(0, 0, map)
+
+risar.widget.setWindowTitle('Path Finder Algorithm Visualizer')
+risar.widget.setWindowIcon(QtGui.QIcon('map-icon.png'))
+
+before = time()
 
 def path(from_point, to_point, max_hop_var):
     path_list = [from_point]
@@ -51,10 +56,10 @@ def most_optimal():
             if len(path_list) == max_hop_var:
                 return from_point, to_point, path_list, max_hop_var
 
-def draw_path():
+def draw_path(coords):
     from_point, to_point, path_list, max_hop_var = most_optimal()
     print(f"From: {from_point}\nTo: {to_point}\nPath: {path_list}\nNumber of hops: {max_hop_var-1}")
-    coords = [places_coords[place] for place in path_list]
+    coords = [coords[place] for place in path_list]
 
     start_x, start_y = coords[0]
     end_x, end_y = coords[-1]
@@ -66,7 +71,7 @@ def draw_path():
         risar.crta(x1, y1, x2, y2, risar.barva(0, 176, 255), 7)
 
 
-draw_path()
+draw_path(coords)
 
 print(f"Running time: {time() - before :.2f} seconds")
 

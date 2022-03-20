@@ -79,7 +79,7 @@ countries = \
     "Sweden": {"Norway", "Finland", "Denmark"}
     }
 
-places_coords = \
+cities_coords = \
     {
         'Cerknica': (235, 328),
         'Krško': (547, 253),
@@ -114,4 +114,48 @@ places_coords = \
         'Slovenska Bistrica': (510, 126),
         'Trbovlje': (393, 206),
         'Kamnik': (288, 178)
+    }
+
+countries_coords = \
+    {
+        'Andorra': (246, 683),
+        'Turkey': (743, 755),
+        'Switzerland': (367, 598),
+        'Albania': (566, 736),
+        'Moldova': (688, 573),
+        'San Marino': (435, 674),
+        'Latvia': (606, 365),
+        'Ukraine': (701, 504),
+        'Luxembourg': (343, 531),
+        'Montenegro': (548, 697),
+        'Croatia': (494, 633),
+        'Italy': (402, 643),
+        'Spain': (151, 707),
+        'Hungary': (539, 597),
+        'Belgium': (324, 505),
+        'Romania': (635, 616),
+        'Kosovo': (576, 705),
+        'Slovakia': (540, 557),
+        'Holy See': (431, 718),
+        'Estonia': (603, 320),
+        'Belarus': (653, 438),
+        'Macedonia': (592, 718),
+        'Greece': (607, 783),
+        'Austria': (468, 588),
+        'Netherlands': (342, 472),
+        'Czech Republic': (477, 535),
+        'Serbia': (565, 647),
+        'Slovenia': (472, 622),
+        'Sweden': (477, 290),
+        'Bulgaria': (648, 690),
+        'Norway': (409, 281),
+        'Portugal': (60, 711),
+        'Lithuania': (593, 399),
+        'Bosnia and Herzegovina': (520, 664),
+        'France': (271, 569),
+        'Germany': (404, 493),
+        'Poland': (535, 478),
+        'Denmark': (406, 383),
+        'Russia': (826, 309),
+        'Finland': (598, 208)
     }
