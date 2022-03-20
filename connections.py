@@ -30,3 +30,13 @@ connections = [("Piran", "Koper"),
                ("Ptuj", "Ormož"),
                ("Ljutomer", "Ormož"),
                ("Bled", "Jesenice")]
+
+places_coords = {'Cerknica': (235, 328), 'Krško': (547, 253), 'Celje': (445, 178), 'Maribor': (528, 63),
+                 'Škofja Loka': (215, 198), 'Grosuplje': (303, 271), 'Koper': (75, 414), 'Idrija': (153, 260),
+                 'Ormož': (648, 116), 'Postojna': (192, 333), 'Žiri': (170, 236), 'Kranj': (228, 171),
+                 'Kočevje': (340, 377), 'Bled': (192, 133), 'Vrhnika': (223, 268), 'Ribnica': (317, 342),
+                 'Ljutomer': (659, 79), 'Velenje': (409, 134), 'Litija': (341, 236), 'Gornja Radgona': (613, 13),
+                 'Logatec': (198, 281), 'Piran': (51, 426), 'Jesenice': (156, 90), 'Ajdovščina': (125, 294),
+                 'Murska Sobota': (651, 16), 'Ljubljana': (258, 235), 'Novo mesto': (414, 322),
+                 'Ilirska Bistrica': (202, 405), 'Gorica': (55, 276), 'Ptuj': (580, 109),
+                 'Slovenska Bistrica': (510, 126), 'Trbovlje': (393, 206), 'Kamnik': (288, 178)}
