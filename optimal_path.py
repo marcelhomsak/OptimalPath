@@ -1,16 +1,10 @@
-from collections import defaultdict
 from random import choice
 from math import e
 from time import time
 
-from connections import connections
+from connections import cities, countries
 
 before = time()
-
-s = defaultdict(set)
-for k1, k2 in connections:
-    s[k1].update({k2})
-    s[k2].update({k1})
 
 ####################
 from_point = "Krško"
